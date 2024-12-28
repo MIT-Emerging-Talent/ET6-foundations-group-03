@@ -1,6 +1,9 @@
+# pylint: disable=relative-beyond-top-level
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+test_largest_element.py
+
 This module tests the largest element function which returns the largest
 element in a list of numbers.
 
