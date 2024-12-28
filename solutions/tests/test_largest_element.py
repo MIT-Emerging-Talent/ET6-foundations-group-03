@@ -9,15 +9,8 @@ Created on Dec 21, 2024
 @author: Meklit Gebregiorgis
 """
 
-import sys
-import os
 import unittest
-
-# Allow modifying sys.path before imports
-# pylint: disable=wrong-import-position
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
-from solutions.largest_element import largest_element
-# pylint: enable=wrong-import-position
+from ..largest_element import largest_element
 
 
 class TestLargeNumbers(unittest.TestCase):
