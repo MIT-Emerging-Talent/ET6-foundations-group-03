@@ -20,7 +20,7 @@ import unittest
 
 # --- imports & test class after documenting and testing ---
 
-from ..largest_element import largest_element
+from solutions.largest_element import largest_element
 
 
 class TestLargeNumbers(unittest.TestCase):
