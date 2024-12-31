@@ -14,7 +14,7 @@ def largest_element(numbers: list) -> int | float | None:
         numbers (list): list of numbers
 
     Returns:
-        _int/float: The largest number from the list
+        _int/float/None:  Returns the largest number from the list or None if the list is empty
 
     Example:
     >>> largest_element([-1,0,1])
@@ -23,6 +23,8 @@ def largest_element(numbers: list) -> int | float | None:
     3
     >>> largest_element([-1,0,2.5])
     2.5
+    >>> largest_element([])
+
     """
     assert all(
         isinstance(num, (int, float)) for num in numbers
