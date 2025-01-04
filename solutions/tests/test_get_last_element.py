@@ -1,6 +1,6 @@
 import unittest
 
-from ..get_last_element import get_last_element 
+from ..get_last_element import get_last_element
 
 
 class TestGetLastElement(unittest.TestCase):
