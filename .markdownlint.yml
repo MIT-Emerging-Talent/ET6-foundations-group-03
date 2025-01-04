@@ -2,10 +2,6 @@ ignore:
   - venv
   - .github
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 15a2032496f60104ba220ab4c971ec23a82e3ab6
 MD013:
   line_length: 150
   ignore_urls: true
