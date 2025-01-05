@@ -1,10 +1,15 @@
+""" 
+
+    Module: get_last_element
+        This module provides the implementation of the get_last_element function.
+        The function validates input types and returns the last element of a list.
+        
+"""
+
 def get_last_element(lst: list) -> object:
     """
     Returns the last element of a given list.
-
-    This function will return the last item of the list if the list is non-empty.
-    If the list is empty, it will return None.
-
+    
     Parameters:
     lst (list): A list from which the last element is to be returned. The list can contain any type of element.
 
@@ -22,8 +27,7 @@ def get_last_element(lst: list) -> object:
     >>> get_last_element([])
     None
     >>> get_last_element('not a list')
-    Traceback (most recent call last):
-        ...
+    
     TypeError: Input must be a list
     """
     # Defensive assertion: Ensure input is a list
