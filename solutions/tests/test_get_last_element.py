@@ -1,18 +1,19 @@
 """
-    Module: test_get_last_element
-    The unit tests for the get_last_element function check different cases,
-    including lists with multiple elements, one element, empty lists, and invalid inputs.
-    
-    Created on 01.04.2024
-    @author: Mohammad Mohseni
-    
+Module: test_get_last_element
+The unit tests for the get_last_element function check different cases,
+including lists with multiple elements, one element, empty lists, and invalid inputs.
+
+Created on 01.04.2024
+@author: Mohammad Mohseni
+
 """
 
 import unittest
 
 from ..get_last_element import get_last_element
+
+
 class TestGetLastElement(unittest.TestCase):
-    
     """Unit tests for the get_last_element function."""
 
     def test_non_empty_list(self):
