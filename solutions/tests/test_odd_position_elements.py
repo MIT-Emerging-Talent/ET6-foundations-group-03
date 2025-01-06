@@ -10,7 +10,7 @@ Created on 12.26.2024
 
 import unittest
 
-from odd_position_elements import odd_position_elements
+from ..odd_position_elements import odd_position_elements
 
 
 class TestOddPositionElements(unittest.TestCase):
