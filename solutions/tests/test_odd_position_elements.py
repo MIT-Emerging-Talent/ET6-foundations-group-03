@@ -10,7 +10,7 @@ Created on 12.26.2024
 
 import unittest
 
-from ..odd_position_elements import odd_position_elements
+from odd_position_elements import odd_position_elements
 
 
 class TestOddPositionElements(unittest.TestCase):
@@ -27,3 +27,12 @@ class TestOddPositionElements(unittest.TestCase):
     # Basic string test case
     def test_basic(self):
         self.assertEqual(odd_position_elements("Hello World!"), "HloWrd")
+
+    # Special characters test case
+    def test_long_string(self):
+        self.assertEqual(
+            odd_position_elements(
+                "Use of the word //string, to mean any items arranged in a *line*"
+            ),
+            "Ueo h od/srn,t enayiesarne na*ie",
+        )
