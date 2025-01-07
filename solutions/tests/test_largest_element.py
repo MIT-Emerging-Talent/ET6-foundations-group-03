@@ -39,4 +39,12 @@ class TestLargeNumbers(unittest.TestCase):
 
     def test_empty_list(self):
         """It should correctly return None"""
-        self.assertEqual(largest_element([]), None)
+        actual = largest_element([])
+        expected = None
+        self.assertEqual(actual, expected)
+
+    def test_same_numbers(self):
+        """It should display the number"""
+        actual = largest_element([6, 6, 6])
+        expected = 6
+        self.assertEqual(actual, expected)
