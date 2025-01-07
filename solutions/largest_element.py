@@ -5,6 +5,7 @@ This module contains the implementation of the largest_element function,
 which checks values of numbers in the list and returns the largest value.
 """
 
+
 def largest_element(numbers: list) -> int | float | None:
     """
     Returns the largest element in a list
