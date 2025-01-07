@@ -11,10 +11,9 @@ def get_last_element(lst: list) -> object:
     """
     Returns the last element of a given list.
 
+
     Pameters:
     lst (list): A list from which the last element is returned. It can contain any type of element, including None or nested lists. If the list is empty, None is returned.
-
-
 
     Returns:
     object: The last element in the list. Returns None if the list is empty.
