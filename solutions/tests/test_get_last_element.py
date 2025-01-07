@@ -49,4 +49,4 @@ class TestGetLastElement(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main()  # Run all the test cases
