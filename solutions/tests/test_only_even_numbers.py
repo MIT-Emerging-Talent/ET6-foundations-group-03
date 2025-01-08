@@ -12,7 +12,7 @@ Created on 01.01.2025
 
 import unittest
 
-from ..only_even_numbers import only_even_numbers
+from only_even_numbers import only_even_numbers
 
 
 class TestOnlyNumbers(unittest.TestCase):
@@ -20,8 +20,8 @@ class TestOnlyNumbers(unittest.TestCase):
 
     # Defensive test case
     def validate_input(text):
-    if not isinstance(text, str):
-        raise ValueError("Input must be a string")
+        if not isinstance(text, str):
+            raise ValueError("Input must be a string")
 
     # Empty string test case
     def test_empty_string(self):
