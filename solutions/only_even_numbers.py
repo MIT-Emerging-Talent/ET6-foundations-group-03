@@ -34,7 +34,13 @@ def only_even_numbers(text: str) -> list[str]:
     if not isinstance(text, str):
         raise ValueError("Input must be a string")
 
-    all_numbers = re.findall(r"\d+", text)
-    even_numbers = [number for number in all_numbers if int(number) % 2 == 0]
+    all_numbers = re.findall(r"\d+", text) #extracting all numbers from text
+    
+    even_numbers = []  # defining result list
+    
+    # checking if the extracted number is even
+    for number in all_numbers:
+        if int(number) % 2 == 0:
+            even_numbers.append(number)  # adding even number to the final list
 
     return even_numbers
