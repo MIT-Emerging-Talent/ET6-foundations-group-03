@@ -21,10 +21,16 @@ Returns -> list of even numbers pulled from the text
 >>> only_even_numbers('Today is January 2nd 2025')
 ['2']
 
+Raising Value error if input is not a string
 """
 
 
 def only_even_numbers(text: str) -> str:
+    
+    # raising Value error if input is not a string
+    if not isinstance(text, str):
+        raise ValueError("Input must be a string")
+        
     import re  # importing Regular Expressions package
 
     even_numbers = []  # defining result list
