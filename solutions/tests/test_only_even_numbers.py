@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 
 """
-Created on 12.26.2024
+Test module for only_even_numbers function
+
+Created on 01.01.2025
 
 @author: Anna Shumylina
 
@@ -15,6 +17,11 @@ from ..only_even_numbers import only_even_numbers
 
 class TestOnlyNumbers(unittest.TestCase):
     """Test module for only_even_numbers function"""
+
+    # Defensive test case
+    def validate_input(text):
+    if not isinstance(text, str):
+        raise ValueError("Input must be a string")
 
     # Empty string test case
     def test_empty_string(self):
