@@ -6,7 +6,7 @@ A module for finding the smallest number in a list of integers.
 Module contents:
     - find_smallest_number: finds the smallest number in a list.
 
-Created on XX XX XX
+Created on 2025-01-04
 @author: Saliha Kalender
 """
 
@@ -18,7 +18,8 @@ def find_smallest_number(numbers: List[int]) -> int:
     Finds the smallest number in a given list of integers.
 
     Args:
-        numbers (List[int]): A list of integers. Must contain at least one element.
+        numbers (List[int]): A list of integers. Must contain at least one element. 
+        Expected range is -10**6 to 10**6
 
     Returns:
         int: The smallest number in the list.
@@ -30,8 +31,8 @@ def find_smallest_number(numbers: List[int]) -> int:
     Examples:
         >>> find_smallest_number([3, 1, 4, 1, 5, 9])
         1
-        >>> find_smallest_number([-10, -20, 0, 5, 10])
-        -20
+        >>> find_smallest_number([-25, -15, -1, -5, -10])
+        -25
         >>> find_smallest_number([42])
         42
     """
@@ -48,9 +49,3 @@ def find_smallest_number(numbers: List[int]) -> int:
 
     # Find and return the smallest number
     return min(numbers)
-
-
-if __name__ == "__main__":
-    # Example usage
-    example_list = [3, 1, 4, 1, 5, 9]
-    print("The smallest number is:", find_smallest_number(example_list))
