@@ -8,7 +8,7 @@ Created on 2025-01-07
 """
 
 import unittest
-from find_largest_number import find_largest_number
+from ..find_largest_number import find_largest_number
 
 
 class TestFindLargestNumber(unittest.TestCase):
