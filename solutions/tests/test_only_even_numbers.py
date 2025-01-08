@@ -12,7 +12,7 @@ Created on 01.01.2025
 
 import unittest
 
-from only_even_numbers import only_even_numbers
+from ..only_even_numbers import only_even_numbers
 
 
 class TestOnlyNumbers(unittest.TestCase):

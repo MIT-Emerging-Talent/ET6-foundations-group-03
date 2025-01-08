@@ -21,7 +21,7 @@ Returns -> list of even numbers pulled from the text
 >>> only_even_numbers('Today is January 2nd 2025')
 ['2']
 
-Raising Value error if input is not a string
+Raising ValueError if input is not a string
 """
 
 
