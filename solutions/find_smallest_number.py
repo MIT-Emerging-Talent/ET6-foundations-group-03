@@ -18,7 +18,7 @@ def find_smallest_number(numbers: List[int]) -> int:
     Finds the smallest number in a given list of integers.
 
     Args:
-        numbers (List[int]): A list of integers. Must contain at least one element. 
+        numbers (List[int]): A list of integers. Must contain at least one element.
         Expected range is -10**6 to 10**6
 
     Returns:
