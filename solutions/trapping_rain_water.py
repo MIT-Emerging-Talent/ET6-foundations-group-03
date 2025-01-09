@@ -44,4 +44,3 @@ def trap(height):
             water += max(0, right_max - height[right])
 
     return water
-
