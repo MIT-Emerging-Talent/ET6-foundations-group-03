@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
 Test cases for the `trap` function, which calculates the amount of rainwater
 that can be trapped given an elevation map.
