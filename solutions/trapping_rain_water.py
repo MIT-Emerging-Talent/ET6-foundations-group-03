@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# _*_ coding: utf-8 _*_
+
+
 def trap(height):
     """
     Calculates the amount of rainwater that can be trapped given an elevation map.
