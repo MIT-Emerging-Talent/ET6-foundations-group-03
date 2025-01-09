@@ -70,3 +70,5 @@ if __name__ == "__main__":
     # Run all tests
     test_trap()
     print("All tests passed successfully!")
+
+# This is a formatting test
