@@ -6,7 +6,7 @@ A module for testing the function that finds the smallest number in a list of in
 Module contents:
     - TestFindSmallestNumber: unit tests for the `find_smallest_number` function.
 
-Created on 2025-01-04
+Created on 01-04-2025
 @author: Saliha Kalender
 """
 

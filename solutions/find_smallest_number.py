@@ -6,7 +6,7 @@ A module for finding the smallest number in a list of integers.
 Module contents:
     - find_smallest_number: finds the smallest number in a list.
 
-Created on 2025-01-04
+Created on 01-04-2025
 @author: Saliha Kalender
 """
 
