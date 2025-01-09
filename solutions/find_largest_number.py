@@ -31,11 +31,17 @@ def find_largest_number(numbers: list) -> int:
         >>> find_largest_number([42])
         42
     """
+    # Validate input type
     if not isinstance(numbers, list):
         raise TypeError("Invalid input: Expected a list of integers.")
+
+    # Check if the list is empty
     if not numbers:
         raise ValueError("The list is empty.")
+
+    # Check if all elements in the list are integers
     if not all(isinstance(num, int) for num in numbers):
         raise ValueError("All elements in the list must be integers.")
 
+    # Find and return the largest number
     return max(numbers)
