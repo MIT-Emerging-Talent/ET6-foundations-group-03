@@ -29,6 +29,10 @@ def trap(height):
         0
         >>> trap([3, 0, 0, 2, 0, 4])
         10
+<<<<<<< HEAD
+=======
+    """
+>>>>>>> 57d4e6c37b3de70c695a9fdefe95ad36bd284da6
     """
 
     # Defensive assertions for input validation
