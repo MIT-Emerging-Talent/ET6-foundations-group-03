@@ -15,13 +15,27 @@ def trap(height):
         - Uses two pointers (left and right) to traverse the elevation map.
         - Tracks the maximum height to the left and right of each bar.
         - Accumulates water trapped based on the minimum of these maximum heights.
+
+        Examples:
+        >>> trap([0,1,0,2,1,0,1,3,2,1,2,1])
+        6
+        >>> trap([4,2,0,3,2,5])
+        9
+        >>> trap([1,0,2,1,0,1,3,2,1,2,1])
+        6
+        >>> trap([1, 2, 3, 4])
+        0
+        >>> trap([5, 4, 3, 2, 1])
+        0
+        >>> trap([3, 0, 0, 2, 0, 4])
+        10
     """
 
     # Defensive assertions for input validation
     assert isinstance(height, list), "Input must be a list."
-    assert all(isinstance(h, int) and h >= 0 for h in height), (
-        "All elements must be non-negative integers."
-    )
+    assert all(
+        isinstance(h, int) and h >= 0 for h in height
+    ), "All elements must be non-negative integers."
 
     # If there are fewer than 3 elements, no water can be trapped.
     if not height or len(height) < 3:

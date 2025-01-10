@@ -67,6 +67,38 @@ def test_trap():
     # Test case 10: Single valley
     # Expected output: 3, as water is trapped in the single valley.
     assert trap([3, 0, 3]) == 3, "Failed on single valley case"
+    # Defensive assertion tests:
+    # Test case 11: Invalid input type (not a list)
+    try:
+        trap("invalid input")
+    except AssertionError:
+        pass  # Expected, input is not a list
+    else:
+        print("Failed on invalid input type")
+
+    # Test case 12: List with negative integers
+    try:
+        trap([1, 2, -1, 3])
+    except AssertionError:
+        pass  # Expected, negative values in list
+    else:
+        print("Failed on negative values")
+
+    # Test case 13: List with non-integer values
+    try:
+        trap([1, 2, "3", 4])
+    except AssertionError:
+        pass  # Expected, non-integer value in list
+    else:
+        print("Failed on non-integer values")
+
+    # Test case 14: List with mixed valid and invalid values
+    try:
+        trap([1, 2, 3, "invalid"])
+    except AssertionError:
+        pass  # Expected, mixed values in the list
+    else:
+        print("Failed on mixed valid and invalid values")
 
 
 if __name__ == "__main__":
