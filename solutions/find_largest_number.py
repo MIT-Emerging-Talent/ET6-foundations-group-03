@@ -12,6 +12,9 @@ Created on 2025-01-07
 def find_largest_number(numbers: list) -> int:
     """
     Find the largest number in a list.
+     Expected range:
+      - Input: List of numeric values (int or float).
+      - Output: The largest numeric value in the list.
 
     Args:
         numbers (list[int]): A list of integers.
