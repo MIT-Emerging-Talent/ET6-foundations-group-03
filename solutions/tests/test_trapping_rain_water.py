@@ -16,7 +16,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 # Import the `trap` function from the solution file
-from ..trapping_rain_water import trap
+from solutions.trapping_rain_water import trap
 
 
 def test_trap():
