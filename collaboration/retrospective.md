@@ -2,8 +2,8 @@
 
 ## Stop Doing
 
-- Formalize tasks and discussions by documenting them on the project board.
-- Implement more structured processes to avoid revisiting issues.
+- Allowing tasks and discussions to remain informal without proper documentation on the project board.
+- Spending extra time revisiting issues that could have been avoided with more structured processes in place.
 - Depending only on debugging tools instead of thoroughly analyzing errors.
 
 ## Continue Doing
@@ -12,7 +12,7 @@
 - Very productive group and one-to-one Google meetings.
 - Continue conducting helpful and understandable code reviews.
 - Maintaining a positive and supportive environment among team members.
-- Allotting enough time for review.
+- Providing enough time for review.
 
 ## Start Doing
 
