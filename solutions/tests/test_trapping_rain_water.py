@@ -16,7 +16,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 # Import the `trap` function from the solution file
-from solutions.trapping_rain_water import trap
+from ..trapping_rain_water import trap
 
 
 def test_trap():
@@ -100,7 +100,7 @@ def test_trap():
     else:
         print("Failed on mixed valid and invalid values")
 
-# Defensive assertion tests:
+    # Defensive assertion tests:
     # Test case 11: Invalid input type (not a list)
     try:
         trap("invalid input")
