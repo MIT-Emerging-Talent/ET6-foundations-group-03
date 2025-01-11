@@ -1,13 +1,14 @@
 """
 Module: sort_and_append
 
-    A utility that sorts a list and appends it to another list. It works with lists containing any type of elements.
+    A utility that sorts a list (with comparable elements) and appends it to another list.
 
 Created: 2025/01/09
 Author: Mohammad
+
 """
 
-from typing import List, Any  # Import List and Any for type annotations
+from typing import Any, List  # Import List and Any for type annotations
 
 
 def sort_and_append(source: List[Any], target: List[Any]) -> List[Any]:
@@ -32,10 +33,14 @@ def sort_and_append(source: List[Any], target: List[Any]) -> List[Any]:
     ['Hello', 'Mohammad']
 
     >>> sort_and_append("not_a_list", [])
-    Raises: AssertionError: source must be a list
+            Raises: AssertionError: If `source` is not a list.
+            The error includes the actual type of `source`.
     """
-
     # Assertion to check that source is a list
     assert isinstance(source, list), "source must be a list"
+    # Assertion to check that target is a list
+    assert isinstance(target, list), "target must be a list"
+
+    # Sort the source list and append it to the target list
     target.extend(sorted(source))
     return target

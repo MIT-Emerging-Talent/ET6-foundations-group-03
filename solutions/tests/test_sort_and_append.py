@@ -8,6 +8,7 @@ Author: Mohammad
 """
 
 import unittest
+
 from ..sort_and_append import sort_and_append
 
 
@@ -45,10 +46,25 @@ class TestSortAndAppend(unittest.TestCase):
         self.assertEqual(sort_and_append([3], []), [3])
         self.assertEqual(sort_and_append(["single"], []), ["single"])
 
-    def test_invalid_source_type(self):
-        """The function is tested to check if it raises an AssertionError for an invalid source type."""
+    def test_sort_and_append_large_list(self):
+        """Test sorting and appending a large list."""
+        large_list = list(range(1000, 0, -1))  # A large list from 1000 to 1
+        result = sort_and_append(large_list, [])
+        self.assertEqual(result, list(range(1, 1001)))  # Check if sorted correctly
+
+    def test_invalid_input(self):
+        """Test invalid inputs for the function."""
+
+        # Check if an error is raised when source is not a list
         with self.assertRaises(AssertionError):
             sort_and_append("not_a_list", [])
+
+        with self.assertRaises(AssertionError):
+            sort_and_append(42, [])
+
+        # Check if an error is raised when items_to_add is not a list
+        with self.assertRaises(AssertionError):
+            sort_and_append([1, 2], "not_a_list")
 
 
 if __name__ == "__main__":
