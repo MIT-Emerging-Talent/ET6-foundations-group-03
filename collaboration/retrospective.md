@@ -12,6 +12,7 @@
 - Great communication in the WhatsApp channel.
 - Very productive group and one-to-one Google meetings.
 - Continue conducting helpful and understandable code reviews.
+- Keep the practice of discussing the challenges among group members before Q&A sessions.
 - Maintaining a positive and supportive environment among team members.
 - Providing enough time for review.
 - Practicing flexibility in all matters, and being willing to review even at the last minute.
